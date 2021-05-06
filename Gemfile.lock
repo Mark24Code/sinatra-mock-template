@@ -1,0 +1,56 @@
+GEM
+  remote: https://gems.ruby-china.com/
+  specs:
+    backports (3.21.0)
+    concurrent-ruby (1.1.8)
+    daemons (1.4.0)
+    eventmachine (1.2.7)
+    faker (2.17.0)
+      i18n (>= 1.6, < 2)
+    i18n (1.8.10)
+      concurrent-ruby (~> 1.0)
+    multi_json (1.15.0)
+    rack (1.6.13)
+    rack-protection (1.5.5)
+      rack
+    rack-test (1.1.0)
+      rack (>= 1.0, < 3)
+    rake (13.0.3)
+    sinatra (1.4.8)
+      rack (~> 1.5)
+      rack-protection (~> 1.4)
+      tilt (>= 1.3, < 3)
+    sinatra-contrib (1.4.7)
+      backports (>= 2.0)
+      multi_json
+      rack-protection
+      rack-test
+      sinatra (~> 1.4.0)
+      tilt (>= 1.3, < 3)
+    sinatra-cors (1.2.0)
+    sinatra-json (0.1.0)
+      multi_json (~> 1.0)
+      sinatra (~> 1.0)
+    sinatra-reloader (1.0)
+      sinatra-contrib
+    thin (1.8.0)
+      daemons (~> 1.0, >= 1.0.9)
+      eventmachine (~> 1.0, >= 1.0.4)
+      rack (>= 1, < 3)
+    tilt (2.0.10)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  faker
+  rack
+  rake
+  sinatra
+  sinatra-cors
+  sinatra-json
+  sinatra-reloader
+  thin
+
+BUNDLED WITH
+   2.1.4
