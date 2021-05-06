@@ -20,6 +20,7 @@ after do
 end
 
 require './routes.rb'
+require './autoload_mocks.rb'
 
 
 
