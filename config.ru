@@ -1,3 +1,3 @@
 require './app.rb'
 
-run MockServer
+run Sinatra::Application
