@@ -24,14 +24,9 @@ class MockServer < Sinatra::Application
     response.body = response.body.to_json
     logger.info  response.body
   end
-
-  get '/' do
-    {
-      name: "hello world#{Faker::Name.name}",
-      email: "#{Faker::Internet.email}"
-    }
-  end
-
-
 end
+
+require './routes.rb'
+
+
 
