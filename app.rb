@@ -7,8 +7,8 @@ require "json"
 
 set :allow_origin, "*"
 # set :allow_origin, "http://example.com http://foo.com"
-# set :allow_methods, "GET,HEAD,POST"
-# set :allow_headers, "content-type,if-modified-since"
+set :allow_methods, "GET,POST,PUT,DELETE,HEAD,OPTIONS"
+set :allow_headers, "content-type,if-modified-since,allow_headers,authorization"
 # set :expose_headers, "location,link"
 
 before do
