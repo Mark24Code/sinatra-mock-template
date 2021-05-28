@@ -1,41 +1,59 @@
-# sinatra-api-template
+# Sinatra Mock template
 
-Sinatra 后端服务模板
+Restful JSON Mock Server
+(Sinatra + Mock + JSON API + Faker + CORS)
 
-* [x] routes
-* [x] CORS
-* [x] webserver-thin
-* [x] reloader
-* [x] logger
-* [ ] JSON
-* [ ] ORM
-* [ ] Docker
-* [ ] CI & CD
-* [ ] test
+# prepare
 
+## install
 
+* Make sure you have bundler
 
-------
+install bundle
 
-问题
+run `gem install bundler`
 
-使用如下命令保证工作
+* Install dependency gems
+
+enter project directory
+
+run `bundle install`
 
 
-```shell
-rake
+* Run mock server
 
-rackup
+run `bundle exec rake`
 
-rackup -p 5000
+* Add mock files
 
+enter `mocks/` ,create  `xxx.mock.rb`
+
+
+when you can edit your mock ruby script.
+
+make sure `require "sinatra"` was code on top of script file.
+
+
+```ruby
+get '/' do
+  # just return the response object
+  {
+    content: "hello world",
+  }
+end
+
+
+post '/user' do
+  {
+    content: "hello world",
+  }
+end
 ```
 
+the app will collect all pattern like `xxx.mock.rb` into routers. 
 
-使用bundle将会失败，可能是bundle没有正确传递参数
+when you change file, it will hotreload.
 
-```shell
 
-bundle exec rake 
 
-```
+enjoy~
